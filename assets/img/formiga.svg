@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+<title id="t">Formiga urbana</title><desc id="d">Ilustração educativa de formiga urbana para o projeto Vetores Mecânicos.</desc>
+<rect width="900" height="600" rx="48" fill="#FFF7D6"/>
+<circle cx="450" cy="270" r="190" fill="white" opacity=".78"/>
+<circle cx="450" cy="270" r="170" fill="none" stroke="#A16207" stroke-width="10" opacity=".22"/>
+<text x="450" y="335" text-anchor="middle" font-size="210" font-family="Arial, sans-serif">🐜</text>
+<rect x="180" y="485" width="540" height="72" rx="36" fill="#A16207"/>
+<text x="450" y="533" text-anchor="middle" font-size="34" font-weight="700" fill="white" font-family="Arial, sans-serif">Formiga urbana</text>
+</svg>
