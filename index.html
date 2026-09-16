@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1558a6">
+  <meta name="description" content="Página interativa do Grupo 3 — Vetores Mecânicos para a Jornada Científica.">
+  <title>Vetores Mecânicos — Grupo 3</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="hero" id="inicio">
+    <nav class="topbar" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Voltar ao início"><span class="brand-mark" aria-hidden="true">🦠</span><span>Grupo 3</span></a>
+      <div class="nav-links">
+        <a href="#conceito">O que é?</a>
+        <a href="#animais">Explorar</a>
+        <a href="#doencas">Doenças</a>
+        <a href="#quiz">Quiz</a>
+      </div>
+      <button class="fullscreen-btn" id="fullscreenBtn" type="button">⛶ Tela cheia</button>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-copy">
+        <p class="eyebrow">Jornada Científica • 4º ano</p>
+        <h1>Vetores<br><span>Mecânicos</span></h1>
+        <p class="hero-lead">Descubra como alguns animais podem participar da <strong>viagem de micróbios</strong> de um lugar para outro.</p>
+        <div class="hero-phrase"><span aria-hidden="true">🪰</span><strong>No vetor mecânico, o micróbio pega uma carona.</strong></div>
+        <div class="hero-actions">
+          <a class="button primary" href="#animais">Escolher um animal</a>
+          <a class="button ghost" href="#conceito">Entender em 1 minuto</a>
+        </div>
+      </div>
+
+      <div class="hero-demo" aria-label="Exemplo visual de uma cadeia de transmissão mecânica">
+        <div class="demo-card demo-source"><span>🗑️</span><small>ORIGEM</small><strong>Lixo ou fezes</strong></div>
+        <div class="demo-arrow" aria-hidden="true">→</div>
+        <div class="demo-card demo-vector"><span>🪰</span><small>CARONA</small><strong>Animal</strong></div>
+        <div class="demo-arrow" aria-hidden="true">→</div>
+        <div class="demo-card demo-food"><span>🥪</span><small>CONTATO</small><strong>Alimento</strong></div>
+        <div class="demo-arrow" aria-hidden="true">→</div>
+        <div class="demo-card demo-person"><span>🙂</span><small>DESTINO</small><strong>Pessoa</strong></div>
+        <div class="microbe microbe-1" aria-hidden="true">🦠</div>
+        <div class="microbe microbe-2" aria-hidden="true">🦠</div>
+        <div class="microbe microbe-3" aria-hidden="true">🦠</div>
+      </div>
+    </div>
+
+    <div class="authors-strip"><strong>Autores:</strong> João Gabriel • Marcel • João Antônio • Enzo • Estevão • Lorenzo</div>
+  </header>
+
+  <main id="conteudo">
+    <section class="section intro" id="conceito">
+      <div class="section-title centered">
+        <span class="section-kicker">COMECE POR AQUI</span>
+        <h2>O que é um vetor mecânico?</h2>
+        <p>É mais simples do que parece.</p>
+      </div>
+
+      <div class="concept-grid">
+        <article class="concept-card main-concept">
+          <div class="concept-icon" aria-hidden="true">🪰</div>
+          <div>
+            <h3>O micróbio pega uma carona</h3>
+            <p>O animal pode carregar um microrganismo de um lugar para outro. O micróbio <strong>não precisa crescer nem se desenvolver dentro dele</strong> para ser transportado.</p>
+          </div>
+        </article>
+        <article class="concept-card">
+          <div class="concept-icon" aria-hidden="true">🔬</div>
+          <div><h3>Encontrar não é o mesmo que provar</h3><p>Achar um micróbio no animal mostra que ele pode carregá-lo, mas nem sempre prova que aquele animal transmitiu uma doença.</p></div>
+        </article>
+        <article class="concept-card">
+          <div class="concept-icon" aria-hidden="true">🛡️</div>
+          <div><h3>Prevenção quebra o caminho</h3><p>Limpeza, saneamento, alimentos protegidos e controle de pragas ajudam a impedir que o micróbio complete essa viagem.</p></div>
+        </article>
+      </div>
+
+      <div class="compare-box">
+        <div><span class="compare-label">VETOR MECÂNICO</span><strong>Transporta o agente</strong><p>O micróbio pega uma carona.</p></div>
+        <div class="compare-vs">≠</div>
+        <div><span class="compare-label blue">VETOR BIOLÓGICO</span><strong>Faz parte do ciclo do agente</strong><p>Ex.: mosquito da dengue.</p></div>
+      </div>
+    </section>
+
+    <section class="section explorer" id="animais">
+      <div class="section-title">
+        <span class="section-kicker">AGORA É COM VOCÊ</span>
+        <h2>Escolha um animal para investigar</h2>
+        <p>Clique em um card e acompanhe o caminho completo: <strong>animal → micróbio → doença → transmissão → prevenção</strong>.</p>
+      </div>
+
+      <div class="evidence-legend" aria-label="Legenda dos níveis de evidência">
+        <span><i class="dot dot-strong"></i> relação mais bem estabelecida</span>
+        <span><i class="dot dot-doc"></i> transporte documentado</span>
+        <span><i class="dot dot-potential"></i> carreador potencial</span>
+        <span><i class="dot dot-special"></i> caso de comparação</span>
+      </div>
+
+      <div class="animal-grid" id="animalGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="section disease-map" id="doencas">
+      <div class="section-title centered narrow">
+        <span class="section-kicker">CAMINHO INVERSO</span>
+        <h2>Quer começar pela doença?</h2>
+        <p>Toque em uma opção e a página destaca os animais relacionados. Isso não significa que todos tenham o mesmo peso na transmissão.</p>
+      </div>
+      <div class="disease-filter" id="diseaseFilters" role="group" aria-label="Filtrar animais por doença ou agente"></div>
+      <button class="clear-filter" id="clearFilter" type="button" hidden>Limpar filtro ✕</button>
+      <p class="filter-message" id="filterMessage" aria-live="polite"></p>
+    </section>
+
+    <section class="section rat-section" id="rato">
+      <div class="rat-panel">
+        <div class="rat-image-wrap"><img src="assets/img/rato.svg" alt="Card ilustrado de um rato"></div>
+        <div class="rat-content">
+          <span class="section-kicker light">UM CASO DIFERENTE</span>
+          <h2>Então… o rato é vetor mecânico?</h2>
+          <p class="rat-answer">Na leptospirose, <strong>não é correto tratá-lo como equivalente à mosca</strong>.</p>
+          <p>O rato é principalmente um <strong>reservatório</strong>: a bactéria <em>Leptospira</em> pode permanecer em seus rins e sair pela urina, contaminando água, lama e solo.</p>
+          <div class="rat-flow"><span>🐀 rato</span><b>→</b><span>💧 urina</span><b>→</b><span>🌧️ ambiente</span><b>→</b><span>🙂 pessoa</span></div>
+          <div class="rat-note"><strong>Leptospira</strong> = bactéria &nbsp;•&nbsp; <strong>leptospirose</strong> = doença</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section prevention" id="prevencao">
+      <div class="section-title centered">
+        <span class="section-kicker">A PARTE QUE VALE PARA TODO MUNDO</span>
+        <h2>Como quebrar a viagem do micróbio?</h2>
+      </div>
+      <div class="prevention-grid">
+        <article><span>🗑️</span><h3>Lixo fechado</h3><p>Evita alimento e abrigo para moscas, baratas, formigas e roedores.</p></article>
+        <article><span>🥗</span><h3>Comida protegida</h3><p>Não deixe alimentos expostos ao contato de insetos e superfícies contaminadas.</p></article>
+        <article><span>🧼</span><h3>Mãos e superfícies limpas</h3><p>Higiene ajuda a interromper a passagem dos microrganismos.</p></article>
+        <article><span>🚰</span><h3>Água e saneamento</h3><p>Água segura e destino correto de fezes e resíduos reduzem a contaminação.</p></article>
+        <article><span>🏠</span><h3>Ambiente protegido</h3><p>Vede frestas, use telas quando necessário e evite acúmulo de matéria orgânica.</p></article>
+        <article><span>🌧️</span><h3>Cuidado com enchentes</h3><p>Água e lama podem estar contaminadas com urina de roedores.</p></article>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="quiz-panel">
+        <div class="quiz-intro">
+          <span class="section-kicker light">DESAFIO FINAL</span>
+          <h2>Você entendeu a investigação?</h2>
+          <p>São só 4 perguntas. A página corrige na hora.</p>
+          <div class="score-ring" id="scoreRing" aria-hidden="true"><span id="scoreNumber">?</span><small>/4</small></div>
+        </div>
+        <form class="quiz-form" id="quizForm">
+          <fieldset>
+            <legend>1. No vetor mecânico, o micróbio…</legend>
+            <label><input type="radio" name="q1" value="a"> pega uma carona.</label>
+            <label><input type="radio" name="q1" value="b"> sempre cresce dentro do animal.</label>
+          </fieldset>
+          <fieldset>
+            <legend>2. Encontrar uma bactéria numa barata prova que ela causou uma doença?</legend>
+            <label><input type="radio" name="q2" value="a"> Sim.</label>
+            <label><input type="radio" name="q2" value="b"> Não.</label>
+          </fieldset>
+          <fieldset>
+            <legend>3. Na leptospirose, o rato é principalmente…</legend>
+            <label><input type="radio" name="q3" value="a"> reservatório e fonte de contaminação ambiental.</label>
+            <label><input type="radio" name="q3" value="b"> um vetor biológico como o Aedes.</label>
+          </fieldset>
+          <fieldset>
+            <legend>4. Qual atitude ajuda a prevenir?</legend>
+            <label><input type="radio" name="q4" value="a"> deixar comida descoberta.</label>
+            <label><input type="radio" name="q4" value="b"> proteger alimentos e cuidar do lixo.</label>
+          </fieldset>
+          <button class="button quiz-button" type="submit">Corrigir respostas</button>
+          <button class="quiz-reset" type="reset">Tentar novamente</button>
+          <div class="quiz-result" id="quizResult" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="section sources" id="fontes">
+      <details>
+        <summary>📚 Quer saber de onde vieram as informações? <span>Ver fontes científicas</span></summary>
+        <div class="sources-content">
+          <p>A página foi construída a partir de documentos institucionais e literatura científica. Entre as principais referências:</p>
+          <ol>
+            <li>World Health Organization (WHO). <em>Vector-borne diseases</em>.</li>
+            <li>Khamesipour F. et al. <em>A systematic review of human pathogens carried by the housefly (Musca domestica L.)</em>. BMC Public Health, 2018. DOI: 10.1186/s12889-018-5934-3.</li>
+            <li>Shahanaz E. et al. <em>Flies as Vectors of Foodborne Pathogens Through Food Animal Production</em>. Journal of Food Protection, 2025. DOI: 10.1016/j.jfp.2025.100537.</li>
+            <li>Crespo A. et al. <em>Pathogens of Medical Importance Identified in Hospital-Collected Cockroaches: A Systematic Review</em>. Microorganisms, 2025.</li>
+            <li>Baldacchino F. et al. <em>Tabanids: Neglected subjects of research, but important vectors of disease agents!</em> Infection, Genetics and Evolution, 2014.</li>
+            <li>Patel A. et al. <em>A Systematic Review of Zoonotic Enteric Parasites Carried by Flies, Cockroaches, and Dung Beetles</em>. Pathogens, 2022.</li>
+            <li>Brasil. Ministério da Saúde. <em>Leptospirose — Saúde de A a Z</em>.</li>
+            <li>U.S. Centers for Disease Control and Prevention (CDC): materiais sobre Salmonella, Shigella, Giardia, Cryptosporidium, tularemia e leptospirose.</li>
+          </ol>
+        </div>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>GRUPO 3 — VETORES MECÂNICOS</strong><br><span>João Gabriel • Marcel • João Antônio • Enzo • Estevão • Lorenzo</span></div>
+    <a href="#inicio">Voltar ao início ↑</a>
+  </footer>
+
+  <dialog class="animal-dialog" id="animalDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-shell">
+      <button class="dialog-close" id="dialogClose" aria-label="Fechar">×</button>
+      <div class="dialog-hero">
+        <img id="dialogImage" alt="Ilustração do animal selecionado">
+        <div class="dialog-title-block">
+          <span class="evidence-pill" id="dialogEvidencePill"></span>
+          <p id="dialogScientific" class="scientific"></p>
+          <h2 id="dialogTitle"></h2>
+          <p id="dialogSummary" class="dialog-summary"></p>
+        </div>
+      </div>
+
+      <div class="dialog-flow-wrap">
+        <span>Como o caminho pode acontecer?</span>
+        <div class="dialog-flow" id="dialogFlow"></div>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Conteúdo do animal">
+        <button class="tab active" type="button" role="tab" data-tab="relations" aria-selected="true">🦠 Agentes e doenças</button>
+        <button class="tab" type="button" role="tab" data-tab="prevention" aria-selected="false">🛡️ Prevenção</button>
+        <button class="tab" type="button" role="tab" data-tab="more" aria-selected="false">🔬 Saiba mais</button>
+      </div>
+
+      <div class="tab-panel active" id="tab-relations" role="tabpanel">
+        <div class="two-columns">
+          <div><h3>Microrganismos ou agentes relacionados</h3><ul id="dialogAgents"></ul></div>
+          <div><h3>Doenças selecionadas para a página</h3><ul id="dialogDiseases"></ul></div>
+        </div>
+        <div class="evidence-box"><strong>O que a evidência permite dizer?</strong><p id="dialogEvidence"></p></div>
+      </div>
+      <div class="tab-panel" id="tab-prevention" role="tabpanel" hidden>
+        <h3>Como reduzir o risco?</h3><ul class="check-list" id="dialogPrevention"></ul>
+      </div>
+      <div class="tab-panel" id="tab-more" role="tabpanel" hidden>
+        <h3>Para quem quer aprofundar</h3><p id="dialogMore"></p>
+        <div class="say-box good"><span>✅</span><div><strong>Uma boa forma de explicar</strong><p id="dialogSay"></p></div></div>
+        <div class="say-box caution"><span>⚠️</span><div><strong>Evite dizer assim</strong><p id="dialogAvoid"></p></div></div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
