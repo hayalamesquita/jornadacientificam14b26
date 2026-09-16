@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-labelledby="t d">
+<title id="t">Mutuca</title><desc id="d">Ilustração educativa de mutuca para o projeto Vetores Mecânicos.</desc>
+<rect width="900" height="600" rx="48" fill="#F3E8FF"/>
+<circle cx="450" cy="270" r="190" fill="white" opacity=".78"/>
+<circle cx="450" cy="270" r="170" fill="none" stroke="#7E22CE" stroke-width="10" opacity=".22"/>
+<text x="450" y="335" text-anchor="middle" font-size="210" font-family="Arial, sans-serif">🪰</text>
+<rect x="180" y="485" width="540" height="72" rx="36" fill="#7E22CE"/>
+<text x="450" y="533" text-anchor="middle" font-size="34" font-weight="700" fill="white" font-family="Arial, sans-serif">Mutuca</text>
+</svg>
